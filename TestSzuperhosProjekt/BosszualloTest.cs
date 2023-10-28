@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,7 +76,7 @@ namespace TestSzuperhosProjekt
         [Fact]
         public void LegyoziEBatman()
         {
-            Batman batman = new Batman();
+            Batman batman = new Batman(); // leleményesség = 100 => Szuperero = 200
             Assert.False(bosszuallo.LegyoziE(batman));
             bosszuallo.Szuperero = 400;
             Assert.True(bosszuallo.LegyoziE(batman));

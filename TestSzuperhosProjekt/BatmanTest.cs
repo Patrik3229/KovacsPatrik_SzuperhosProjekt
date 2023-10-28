@@ -9,8 +9,12 @@ namespace TestSzuperhosProjekt
 {
     public class BatmanTest
     {
-        private class SzuperhosMock : ISzuperhos
+        public class SzuperhosMock : ISzuperhos
         {
+            public double Szuperero => throw new NotImplementedException();
+
+            public bool VanEGyengesege => throw new NotImplementedException();
+
             public bool LegyoziE(ISzuperhos szuperhos)
             {
                 return false;
